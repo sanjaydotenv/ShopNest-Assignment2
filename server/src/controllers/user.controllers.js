@@ -48,7 +48,11 @@ const userRegisterController = async (req, res) => {
     refreshToken,
   });
 
-  res.cookie("refreshToken", refreshToken);
+  res.cookie("refreshToken", newRefreshToken, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
 
   res.status(201).json({
     message: "User registered successfully",
@@ -88,8 +92,10 @@ const userLoginController = async (req, res) => {
     refreshToken,
   });
 
-  res.cookie("refreshToken", refreshToken, {
+  res.cookie("refreshToken", newRefreshToken, {
     httpOnly: true,
+    secure: true,
+    sameSite: "none",
   });
 
   res.status(200).json({
@@ -158,6 +164,8 @@ const getNewAccessTokenViaRefreshTokenController = async (req, res) => {
 
     res.cookie("refreshToken", newRefreshToken, {
       httpOnly: true,
+      secure: true,
+      sameSite: "none",
     });
 
     return res.status(200).json({
@@ -206,5 +214,5 @@ export default {
   userLoginController,
   getNewAccessTokenViaRefreshTokenController,
   userLogoutController,
-  getMeController
+  getMeController,
 };
