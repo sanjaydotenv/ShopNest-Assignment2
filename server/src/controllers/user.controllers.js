@@ -48,7 +48,7 @@ const userRegisterController = async (req, res) => {
     refreshToken,
   });
 
-  res.cookie("refreshToken", newRefreshToken, {
+  res.cookie("refreshToken", refreshToken, {
     httpOnly: true,
     secure: true,
     sameSite: "none",
@@ -92,7 +92,7 @@ const userLoginController = async (req, res) => {
     refreshToken,
   });
 
-  res.cookie("refreshToken", newRefreshToken, {
+  res.cookie("refreshToken", refreshToken, {
     httpOnly: true,
     secure: true,
     sameSite: "none",
