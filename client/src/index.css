@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  /* =========================
+     BRAND COLORS
+  ========================= */
+  --primary: #064e3b;
+  --primary-dark: #043c2e;
+  --primary-light: #0f766e;
+
+  --accent: #a7f3d0;
+  --accent-dark: #6ee7b7;
+
+  /* =========================
+     BACKGROUND
+  ========================= */
+  --bg-main: #f8f7f2;
+  --bg-surface: #ffffff;
+  --bg-soft: #f1f5f2;
+  --bg-dark: #022c22;
+
+  /* =========================
+     TEXT
+  ========================= */
+  --text-primary: #10201b;
+  --text-secondary: #5f6f68;
+  --text-muted: #8a9691;
+  --text-white: #ffffff;
+
+  /* =========================
+     BORDER
+  ========================= */
+  --border: #e2e8e5;
+  --border-dark: #cbd5d1;
+
+  /* =========================
+     STATUS
+  ========================= */
+  --success: #16a34a;
+  --success-bg: #dcfce7;
+
+  --danger: #ef4444;
+  --danger-bg: #fee2e2;
+
+  --warning: #f59e0b;
+  --warning-bg: #fef3c7;
+
+  /* =========================
+     BUTTON
+  ========================= */
+  --btn-primary: #064e3b;
+  --btn-primary-hover: #053f31;
+
+  --btn-danger: #ef4444;
+  --btn-danger-hover: #dc2626;
+
+  /* =========================
+     SHADOW
+  ========================= */
+  --shadow-sm: 0 2px 8px rgba(6, 78, 59, 0.06);
+  --shadow-md: 0 8px 24px rgba(6, 78, 59, 0.08);
+  --shadow-lg: 0 16px 40px rgba(6, 78, 59, 0.12);
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
