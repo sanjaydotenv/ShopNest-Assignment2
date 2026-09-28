@@ -7,12 +7,7 @@ import { toast } from "react-toastify";
 const Profile = () => {
   const navigate = useNavigate();
 
-  const { user, isAuthenticate } = useSelector((state) => state.auth);
-
-  if (!isAuthenticate) {
-    toast.warn("Please register Or login first");
-    return <Navigate to={"/"} />;
-  }
+  const { user } = useSelector((state) => state.auth);
 
   return (
     <div
